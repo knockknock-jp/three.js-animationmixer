@@ -1,0 +1,53 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width,user-scalable=0")
+        title AnimationMixer | three.js exsamples
+        link(rel="stylesheet", href="./common/css/sanitize.css")
+        link(rel="stylesheet", href="./css/index.css")
+    body
+        div.container
+            div#js_content
+            div.box
+                div.box-left
+                    div.controller-direction
+                        ul.controller-direction__ul-list
+                            li
+                                a.js_controllerButton.controller-direction__link-left-up(href="#", data-id="key_type_left_up") &nbsp;
+                            li
+                                a.js_controllerButton.controller-direction__link-up(href="#", data-id="key_type_up") W
+                            li
+                                a.js_controllerButton.controller-direction__link-right-up(href="#", data-id="key_type_right_up") &nbsp;
+                            li
+                                a.js_controllerButton.controller-direction__link-left(href="#", data-id="key_type_left") A
+                            li
+                                a.js_controllerButton.controller-direction__link-right(href="#", data-id="key_type_right") D
+                            li
+                                a.js_controllerButton.controller-direction__link-left-down(href="#", data-id="key_type_left_down") &nbsp;
+                            li
+                                a.js_controllerButton.controller-direction__link-down(href="#", data-id="key_type_down") S
+                            li
+                                a.js_controllerButton.controller-direction__link-right-down(href="#", data-id="key_type_right_down") &nbsp;
+                div.box-right
+                    div.controller-button
+                        ul.controller-button__ul-list
+                            li
+                                a.js_controllerButton.controller-button__link-a(href="#", data-id="key_type_a") K
+                            li
+                                a.js_controllerButton.controller-button__link-b(href="#", data-id="key_type_b") L
+            div.box2
+                dl.list-dl
+                    dt 操作方法
+                    dd W ( ▲ ) : 前進
+                    dd S ( ▼ ) : 後退
+                    dd A ( ◀ ︎) : 左回転
+                    dd D ( ▶︎ ) : 右回転
+                    dd L ( Shift, Enter ) : ジャンプ
+                    dd K : ジャンプ
+            p.paragraph
+                a(href="#") 技術解説へ戻る
+        script(src="./common/js/three.js")
+        script(src="./common/js/jquery-1.12.1.js")
+        script(src="./common/js/jquery.easing.1.3.js")
+        script(src="./js/app.js")

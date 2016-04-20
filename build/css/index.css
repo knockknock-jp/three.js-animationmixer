@@ -1,0 +1,142 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8em;
+  color: #ccc;
+  background-color: #000; }
+
+a {
+  color: #00aaff;
+  text-decoration: underline; }
+
+.container {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  background-color: #000; }
+
+.box {
+  display: table;
+  width: 800px;
+  background-color: #000; }
+  .box .box-left {
+    display: table-cell;
+    padding: 20px;
+    vertical-align: middle;
+    text-align: left; }
+  .box .box-right {
+    display: table-cell;
+    padding: 20px;
+    vertical-align: middle;
+    text-align: right; }
+
+@media (min-width: 799px) {
+  .box {
+    display: none; } }
+
+.box2 {
+  display: block; }
+
+@media (max-width: 800px) {
+  .box2 {
+    display: none; } }
+
+.list-dl {
+  padding: 20px;
+  text-align: center; }
+  .list-dl > dt {
+    font-weight: bold; }
+  .list-dl > dd {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 12px; }
+
+.controller-direction {
+  padding: 20px;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: #222; }
+  .controller-direction .controller-direction__ul-list {
+    position: relative;
+    list-style: none;
+    width: 300px;
+    height: 300px; }
+  .controller-direction .controller-direction__link-left-up, .controller-direction .controller-direction__link-up, .controller-direction .controller-direction__link-right-up, .controller-direction .controller-direction__link-left, .controller-direction .controller-direction__link-right, .controller-direction .controller-direction__link-left-down, .controller-direction .controller-direction__link-down, .controller-direction .controller-direction__link-right-down, .controller-direction .controller-button .controller-button__link-a, .controller-button .controller-direction .controller-button__link-a, .controller-direction .controller-button .controller-button__link-b, .controller-button .controller-direction .controller-button__link-b {
+    position: absolute;
+    display: block;
+    color: #999;
+    text-align: center;
+    font-size: 16px;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    text-decoration: none;
+    background-color: #444; }
+    .controller-direction .controller-direction__link-left-up:hover, .controller-direction .controller-direction__link-up:hover, .controller-direction .controller-direction__link-right-up:hover, .controller-direction .controller-direction__link-left:hover, .controller-direction .controller-direction__link-right:hover, .controller-direction .controller-direction__link-left-down:hover, .controller-direction .controller-direction__link-down:hover, .controller-direction .controller-direction__link-right-down:hover, .controller-direction .controller-button .controller-button__link-a:hover, .controller-button .controller-direction .controller-button__link-a:hover, .controller-direction .controller-button .controller-button__link-b:hover, .controller-button .controller-direction .controller-button__link-b:hover, .controller-direction .controller-direction__link-left-up:active, .controller-direction .controller-direction__link-up:active, .controller-direction .controller-direction__link-right-up:active, .controller-direction .controller-direction__link-left:active, .controller-direction .controller-direction__link-right:active, .controller-direction .controller-direction__link-left-down:active, .controller-direction .controller-direction__link-down:active, .controller-direction .controller-direction__link-right-down:active, .controller-direction .controller-button .controller-button__link-a:active, .controller-button .controller-direction .controller-button__link-a:active, .controller-direction .controller-button .controller-button__link-b:active, .controller-button .controller-direction .controller-button__link-b:active {
+      background-color: #666; }
+  .controller-direction .controller-direction__link-left-up {
+    top: 0;
+    left: 0;
+    border-radius: 100px 0 0 0; }
+  .controller-direction .controller-direction__link-up {
+    top: 0;
+    left: 100px; }
+  .controller-direction .controller-direction__link-right-up {
+    top: 0;
+    left: 200px;
+    border-radius: 0 100px 0 0; }
+  .controller-direction .controller-direction__link-left {
+    top: 100px;
+    left: 0; }
+  .controller-direction .controller-direction__link-right {
+    top: 100px;
+    left: 200px; }
+  .controller-direction .controller-direction__link-left-down {
+    top: 200px;
+    left: 0;
+    border-radius: 0 0 0 100px; }
+  .controller-direction .controller-direction__link-down {
+    top: 200px;
+    left: 100px; }
+  .controller-direction .controller-direction__link-right-down {
+    top: 200px;
+    left: 200px;
+    border-radius: 0 0 100px 0; }
+
+.controller-button {
+  padding: 20px;
+  display: inline-block;
+  border-radius: 24px;
+  background-color: #222; }
+  .controller-button .controller-button__ul-list {
+    position: relative;
+    list-style: none;
+    width: 270px;
+    height: 120px; }
+  .controller-button .controller-direction .controller-direction__link-left-up, .controller-direction .controller-button .controller-direction__link-left-up, .controller-button .controller-direction .controller-direction__link-up, .controller-direction .controller-button .controller-direction__link-up, .controller-button .controller-direction .controller-direction__link-right-up, .controller-direction .controller-button .controller-direction__link-right-up, .controller-button .controller-direction .controller-direction__link-left, .controller-direction .controller-button .controller-direction__link-left, .controller-button .controller-direction .controller-direction__link-right, .controller-direction .controller-button .controller-direction__link-right, .controller-button .controller-direction .controller-direction__link-left-down, .controller-direction .controller-button .controller-direction__link-left-down, .controller-button .controller-direction .controller-direction__link-down, .controller-direction .controller-button .controller-direction__link-down, .controller-button .controller-direction .controller-direction__link-right-down, .controller-direction .controller-button .controller-direction__link-right-down, .controller-button .controller-button__link-a, .controller-button .controller-button__link-b {
+    position: absolute;
+    display: block;
+    color: #999;
+    text-align: center;
+    font-size: 16px;
+    line-height: 120px;
+    width: 120px;
+    height: 120px;
+    text-decoration: none;
+    border-radius: 120px;
+    background-color: #444; }
+    .controller-button .controller-direction .controller-direction__link-left-up:hover, .controller-direction .controller-button .controller-direction__link-left-up:hover, .controller-button .controller-direction .controller-direction__link-up:hover, .controller-direction .controller-button .controller-direction__link-up:hover, .controller-button .controller-direction .controller-direction__link-right-up:hover, .controller-direction .controller-button .controller-direction__link-right-up:hover, .controller-button .controller-direction .controller-direction__link-left:hover, .controller-direction .controller-button .controller-direction__link-left:hover, .controller-button .controller-direction .controller-direction__link-right:hover, .controller-direction .controller-button .controller-direction__link-right:hover, .controller-button .controller-direction .controller-direction__link-left-down:hover, .controller-direction .controller-button .controller-direction__link-left-down:hover, .controller-button .controller-direction .controller-direction__link-down:hover, .controller-direction .controller-button .controller-direction__link-down:hover, .controller-button .controller-direction .controller-direction__link-right-down:hover, .controller-direction .controller-button .controller-direction__link-right-down:hover, .controller-button .controller-button__link-a:hover, .controller-button .controller-button__link-b:hover, .controller-button .controller-direction .controller-direction__link-left-up:active, .controller-direction .controller-button .controller-direction__link-left-up:active, .controller-button .controller-direction .controller-direction__link-up:active, .controller-direction .controller-button .controller-direction__link-up:active, .controller-button .controller-direction .controller-direction__link-right-up:active, .controller-direction .controller-button .controller-direction__link-right-up:active, .controller-button .controller-direction .controller-direction__link-left:active, .controller-direction .controller-button .controller-direction__link-left:active, .controller-button .controller-direction .controller-direction__link-right:active, .controller-direction .controller-button .controller-direction__link-right:active, .controller-button .controller-direction .controller-direction__link-left-down:active, .controller-direction .controller-button .controller-direction__link-left-down:active, .controller-button .controller-direction .controller-direction__link-down:active, .controller-direction .controller-button .controller-direction__link-down:active, .controller-button .controller-direction .controller-direction__link-right-down:active, .controller-direction .controller-button .controller-direction__link-right-down:active, .controller-button .controller-button__link-a:active, .controller-button .controller-button__link-b:active {
+      background-color: #666; }
+  .controller-button .controller-button__link-a {
+    top: 0;
+    left: 0; }
+  .controller-button .controller-button__link-b {
+    top: 0;
+    left: 150px; }
+
+.paragraph {
+  padding: 20px 0;
+  text-align: center; }

@@ -1,0 +1,185 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8em;
+  color: #ccc;
+  background-color: #000;
+}
+
+a {
+  color: #00aaff;
+  text-decoration: underline;
+}
+
+.container {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+.box {
+  display: table;
+  width: 800px;
+  background-color: #000;
+  .box-left {
+    display: table-cell;
+    padding: 20px;
+    vertical-align: middle;
+    text-align: left;
+  }
+  .box-right {
+    display: table-cell;
+    padding: 20px;
+    vertical-align: middle;
+    text-align: right;
+  }
+}
+@media (min-width: 799px) {
+  .box {
+    display: none;
+  }
+}
+
+.box2 {
+  display: block;
+}
+@media (max-width: 800px) {
+  .box2 {
+    display: none;
+  }
+}
+
+.list-dl {
+  padding: 20px;
+  text-align: center;
+  > dt {
+    font-weight: bold;
+  }
+  > dd {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 12px;
+  }
+}
+
+.controller-direction {
+  $SIZE: 100px;
+  padding: 20px;
+  display: inline-block;
+  border-radius: $SIZE / 5;
+  background-color: #222;
+  .controller-direction__ul-list {
+    position: relative;
+    list-style: none;
+    width: $SIZE * 3;
+    height: $SIZE * 3;
+  }
+  %link {
+    position: absolute;
+    display: block;
+    color: #999;
+    text-align: center;
+    font-size: 16px;
+    line-height: $SIZE;
+    width: $SIZE;
+    height: $SIZE;
+    text-decoration: none;
+    background-color: #444;
+    &:hover, &:active {
+      background-color: #666;
+    }
+  }
+  .controller-direction__link-left-up {
+    @extend %link;
+    top: 0;
+    left: 0;
+    border-radius: $SIZE 0 0 0;
+  }
+  .controller-direction__link-up {
+    @extend %link;
+    top: 0;
+    left: $SIZE;
+  }
+  .controller-direction__link-right-up {
+    @extend %link;
+    top: 0;
+    left: $SIZE * 2;
+    border-radius: 0 $SIZE 0 0;
+  }
+  .controller-direction__link-left {
+    @extend %link;
+    top: $SIZE;
+    left: 0;
+  }
+  .controller-direction__link-right {
+    @extend %link;
+    top: $SIZE;
+    left: $SIZE * 2;
+  }
+  .controller-direction__link-left-down {
+    @extend %link;
+    top: $SIZE * 2;
+    left: 0;
+    border-radius: 0 0 0 $SIZE;
+  }
+  .controller-direction__link-down {
+    @extend %link;
+    top: $SIZE * 2;
+    left: $SIZE;
+  }
+  .controller-direction__link-right-down {
+    @extend %link;
+    top: $SIZE * 2;
+    left: $SIZE * 2;
+    border-radius: 0 0 $SIZE 0;
+  }
+}
+
+.controller-button {
+  $SIZE: 120px;
+  padding: 20px;
+  display: inline-block;
+  border-radius: $SIZE / 5;
+  background-color: #222;
+  .controller-button__ul-list {
+    position: relative;
+    list-style: none;
+    width: $SIZE * 2.25;
+    height: $SIZE;
+  }
+  %link {
+    position: absolute;
+    display: block;
+    color: #999;
+    text-align: center;
+    font-size: 16px;
+    line-height: $SIZE;
+    width: $SIZE;
+    height: $SIZE;
+    text-decoration: none;
+    border-radius: $SIZE;
+    background-color: #444;
+    &:hover, &:active {
+      background-color: #666;
+    }
+  }
+  .controller-button__link-a {
+    @extend %link;
+    top: 0;
+    left: 0;
+  }
+  .controller-button__link-b {
+    @extend %link;
+    top: 0;
+    left: $SIZE * 1.25;
+  }
+}
+
+.paragraph {
+  padding: 20px 0;
+  text-align: center;
+}
